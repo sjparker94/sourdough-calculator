@@ -13,7 +13,7 @@ module.exports = {
         // '^.+\\.(ts|tsx)$': 'ts-jest',
         '^.+\\.(ts|tsx)$': 'babel-jest',
     },
-    setupFilesAfterEnv: ['<rootDir>/test/setup.ts'],
+    setupFilesAfterEnv: ['<rootDir>/test/setupTests.ts'],
     testPathIgnorePatterns: ['<rootDir>[/\\\\](node_modules|.next)[/\\\\]'],
     transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$'],
     testMatch: ['**/*/*.spec.(ts|tsx|js)'],
