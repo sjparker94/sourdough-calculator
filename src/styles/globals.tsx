@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
+import { resetStyles } from './reset';
 
 export const GlobalStyle = createGlobalStyle`
+  ${resetStyles}
   :root {
     --page-gutter: 4rem;
   }

@@ -4,7 +4,6 @@ import { ThemeProvider } from 'styled-components';
 import 'normalize.css';
 import { GlobalStyle } from '@/styles/globals';
 import { theme } from '@/styles/theme';
-import { ResetStyle } from '@/styles/reset';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
     return (
@@ -41,7 +40,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                     rel="stylesheet"
                 />
             </Head>
-            <ResetStyle />
             <GlobalStyle />
             <ThemeProvider theme={theme}>
                 <Component {...pageProps} />
