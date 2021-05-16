@@ -24,6 +24,7 @@
             "@/hooks/*": ["src/hooks/*"],
             "@/types/*": ["src/types/*"],
             "@/utils/*": ["src/utils/*"],
+            "@/styles/*": ["src/styles/*"],
             "@/constants/*": ["src/constants/*"],
             "@src/*": ["src/*"],
             "@/test/*": ["test/*"]
