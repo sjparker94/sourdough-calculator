@@ -29,7 +29,7 @@
             "@src/*": ["src/*"],
             "@/test/*": ["test/*"]
         },
-        "types": ["jest", "node", "react"]
+        "types": ["jest", "node", "react", "@testing-library/jest-dom"]
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules"]

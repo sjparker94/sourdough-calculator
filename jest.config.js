@@ -1,19 +1,17 @@
 module.exports = {
-    globals: {
-        'ts-jest': {
-            tsconfig: 'tsconfig.json',
-        },
-    },
     testEnvironment: 'jsdom',
-    // rootDir: '.',
     roots: ['<rootDir>'],
     collectCoverageFrom: ['<rootDir>/src/**/*.{ts,tsx}', '!/**/*.d.ts'],
     moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'jsx'],
     transform: {
         // '^.+\\.(ts|tsx)$': 'ts-jest',
+        // eslint-disable-next-line no-dupe-keys
         '^.+\\.(ts|tsx)$': 'babel-jest',
     },
-    setupFilesAfterEnv: ['<rootDir>/test/setupTests.ts'],
+    setupFilesAfterEnv: [
+        '@testing-library/jest-dom/extend-expect',
+        '<rootDir>/test/setupTests.ts',
+    ],
     testPathIgnorePatterns: ['<rootDir>[/\\\\](node_modules|.next)[/\\\\]'],
     transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$'],
     testMatch: ['**/*/*.spec.(ts|tsx|js)'],
