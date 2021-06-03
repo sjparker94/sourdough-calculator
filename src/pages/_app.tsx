@@ -1,7 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
-import 'normalize.css';
 import { GlobalStyle } from '@/styles/globals';
 import { theme } from '@/styles/theme';
 

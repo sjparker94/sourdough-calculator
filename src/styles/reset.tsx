@@ -1,6 +1,14 @@
 import { css } from 'styled-components';
 
 export const resetStyles = css`
+    html {
+        box-sizing: border-box;
+    }
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
     html,
     body,
     div,
