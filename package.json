@@ -15,10 +15,11 @@
         "framer-motion": "^4.1.16",
         "next": "^10.2.0",
         "next-pwa": "^3.1.0",
-        "normalize.css": "^8.0.1",
+        "polished": "^4.1.2",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
-        "styled-components": "^5.3.0"
+        "styled-components": "^5.3.0",
+        "yup": "^0.32.9"
     },
     "license": "MIT",
     "author": "Simon Parker <simon.parker@hotmail.com>",
